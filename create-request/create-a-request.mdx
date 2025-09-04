@@ -1,0 +1,87 @@
+---
+title: "Create request"
+description: "Requests are the core of The Fetcher - they're saved instructions that tell The Fetcher how to connect your monday board with external applications and APIs. Every time you run a request, it imports fresh data into your board."
+---
+
+## Choose your integration approach
+
+The Fetcher offers two ways to connect with external services:
+
+**Pre-built integrations** - Ready-to-use connections for popular platforms like Google Calendar. Our monday App handle the technical setup for you, so you can focus on configuring what data to import.
+
+**Custom requests** - Connect to any REST API. Perfect when you need to integrate with specialized APIs or services that don't have pre-built integrations.
+
+## Before you begin
+
+Make sure Data Fetcher is set up in your board:
+
+1. Add The Fetcher to your monday workspace and sign up for a free account.
+
+2. On the The Fetcher home screen, click Create your first request.
+
+## How to create a request
+
+### Choose your application
+
+1. On the create request screen, select the **Application** you want to connect to:
+
+   - Choose **Custom** to create a custom request for any API.
+   - Select a pre-built integration from the list of available applications.
+
+### Set up authentication
+
+2. Complete the **Authorization** step by connecting your account or entering required credentials:
+
+   - **Pre-built integrations** often use OAuth to connect your existing accounts.
+   - **Custom requests** typically require API keys or other authentication methods.
+
+   - Some public APIs don't require any authorization
+
+{/* **Pro tip**: You can store API keys and other reusable values as variables in your workspace to use across multiple requests. */}
+
+### Configure the connection
+
+3. If applicable, select an **Endpoint** from the available options. This step varies by application - some have multiple endpoints while others have just one.
+
+4. Enter a descriptive name for your request in the input field at the top of the screen.
+
+5. Click **Save & Continue** in the bottom right corner.
+
+### Complete the setup
+
+6. Fill in any required (\*) configuration options for your chosen application and endpoint. These options control what specific data gets imported.
+   {/* Advanced option: You can use values from your monday group in requests, including running separate requests for each record in a table or view. */}
+
+7. Select your Output Board and Group where the imported data should go. By default, this uses your current table and view.
+
+### Configure field mapping and run
+
+### Set up data mapping
+
+8. Click **Save & Run** in the bottom right corner.
+
+The Response Field Mapping window opens, where you control how data from the external application maps to your monday fields. You only need to configure this once unless you change your data transformation settings.
+
+**For each field:**
+
+- **Select or deselect** by clicking the field name - only selected fields will be imported
+
+- **Map to existing fields** by choosing an existing column in your table
+
+- **Create new fields** by specifying field names and types
+
+### Import your data
+
+9. Once you're satisfied with the field mapping, click **Save & Run** in the bottom right corner.
+
+Your request will execute and import data into your monday board according to your configuration.
+
+## Manage your requests
+
+**Run again**: Click **Save & Run** anytime to import fresh data manually.
+
+**Automate imports**: Set up automatic data imports that work even when you're not logged in.
+
+- [Schedule request](/create-request/schedule-request) to run at regular intervals
+
+Your requests are now ready to keep your monday data synchronized with external applications and APIs.
